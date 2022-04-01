@@ -20,25 +20,6 @@ public class iLAB_Openings {
     @FindBy(xpath = "/html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div/div/div/div[1]/div[1]/div[2]/div[1]/a")
     public WebElement openings;
 
-    @FindBy(xpath = " //*[@id=\"wpjb-scroll\"]/div[1]/a")
-    public WebElement apply;
-
-    @FindBy(xpath = "//*[@id=\"applicant_name\"]")
-    public WebElement firstname ;
-
-    @FindBy(xpath = " //*[@id=\"email\"]")
-    public WebElement email;
-
-    @FindBy(xpath = "//*[@id=\"phone\"]")
-    public WebElement phone ;
-
-    @FindBy(xpath = " //*[@id=\"wpjb_submit\"]")
-    public WebElement submit;
-
-    @FindBy(xpath = " //*[@id=\"wpjb-apply-form\"]/fieldset[1]/div[5]/div/ul/li")
-    public WebElement error;
-
-
 
 
 

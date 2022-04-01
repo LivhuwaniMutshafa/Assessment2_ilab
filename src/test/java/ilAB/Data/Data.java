@@ -16,7 +16,7 @@ public class Data {
 
 
     public ResultSet ConnectAndQuerySQL(String sDBURL, String sUserName, String sPassword,String sQuery) {
-        //ResultSet rs1=null;
+
         ResultSet rs = null;
         try {
 
@@ -56,7 +56,6 @@ public class Data {
                 } else {
                     sValue = resultset.getString(strColumn);
                 }
-                //break;
 
         return sValue;
     }

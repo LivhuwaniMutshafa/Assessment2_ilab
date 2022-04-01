@@ -46,15 +46,13 @@ public class iLABTest {
 
 
         try {
-
+              //connecting to the database and retrieve data
             rs= data.ConnectAndQuerySQL("jdbc:mysql://localhost:3306/ilab",
                     "root", "Livhu98#", "Select * from ilabdata");
             int iRow= data.rowCount(rs);
             web.navigate(sUrl);
             for (int i=1;i<=iRow;i++) {
                 if (rs.next()) {
-
-                    //node = test.createNode("Testing using : " + sBrowser + "for applicant with firstName:" + rs.getString("FirstName"));
 
                    node = test.createNode("iLAB south africa unsuccessful application for  :"+rs.getString("FirstName" )+ "\t"+"using " +"\t" +sBrowser +"\t" +"Browser");
                     iLAB.careers(web.getWebDriver(), node);

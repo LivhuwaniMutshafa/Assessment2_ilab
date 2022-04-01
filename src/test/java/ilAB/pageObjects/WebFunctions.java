@@ -32,7 +32,7 @@ public class WebFunctions extends webActions {
             clickObject(careersObj.careers, driver);
             filename = repo.CaptureScreenShot(driver);
 
-
+              //validation
             if (driver.getCurrentUrl().contains("careers/")) {
                 node.pass("Careers link Successfully clicked", MediaEntityBuilder.createScreenCaptureFromBase64String(filename).build());
             } else {
@@ -54,7 +54,7 @@ public class WebFunctions extends webActions {
             clickObject(countryObj.country, driver);
             filename = repo.CaptureScreenShot(driver);
 
-
+         //validation
             if (driver.getCurrentUrl().contains("south-africa/")) {
                 node.pass("Successfully clicked south africa openings link", MediaEntityBuilder.createScreenCaptureFromBase64String(filename).build());
             } else {
@@ -74,6 +74,8 @@ public class WebFunctions extends webActions {
         try {
             clickObject(openingObj.openings, driver);
             filename = repo.CaptureScreenShot(driver);
+
+            //validation
             if (applyObj.apply.isDisplayed()) {
                 System.out.println("successfully click intern openings link");
                 node.pass("successfully click intern openings link", MediaEntityBuilder.createScreenCaptureFromBase64String(filename).build());
@@ -122,8 +124,10 @@ public class WebFunctions extends webActions {
 
         try {
 
-            //Validate the test and report accordingly including screenshots in the report
+
             filename = repo.CaptureScreenShot(driver);
+
+            //validation
 
             if (applyObj.error.isDisplayed()) {
 

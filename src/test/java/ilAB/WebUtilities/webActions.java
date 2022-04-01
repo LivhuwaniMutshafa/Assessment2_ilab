@@ -12,7 +12,7 @@ import java.time.Duration;
 
 public class webActions {
 
-    //Click web action
+    //Click on the web
     public static void clickObject(WebElement element, WebDriver driver)
     {
         try
@@ -31,10 +31,10 @@ public class webActions {
         }
     }
 
-    //SendKeys web action
-    public static void passData(WebElement element,WebDriver driver,String data){
+    //pass-data to text-fields
+    public static void passData(WebElement element,WebDriver driver,String data) {
 
-        try{
+        try {
 
             Wait<WebDriver> wait = new FluentWait<>(driver)
                     .withTimeout(Duration.ofSeconds(5))
@@ -46,39 +46,9 @@ public class webActions {
             element.sendKeys(data);
 
 
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(element + " Not found");
         }
     }
 
-    //Dropdown web action
-    public static void dropdownHandler(WebElement element,WebDriver driver,String selectBy,Object selectValue){
-
-        Select sel = new Select(element);
-
-        try{
-
-            Wait<WebDriver> wait = new FluentWait<>(driver)
-                    .withTimeout(Duration.ofSeconds(5))
-                    .pollingEvery(Duration.ofMillis(1000))
-                    .ignoring(WebDriverException.class);
-            wait.until(ExpectedConditions.elementToBeClickable(element));
-
-            switch (selectBy.toUpperCase()){
-                case "INDEX":
-                    sel.selectByIndex((Integer) selectValue);
-                    break;
-                case "VISIBLETEXT":
-                    sel.selectByVisibleText((String) selectValue);
-                    break;
-                case "VALUE":
-                    sel.selectByValue((String) selectValue);
-                    break;
-            }
-
-
-        }catch (Exception e){
-            System.out.println(element + " Not found");
-        }
-    }
 }
