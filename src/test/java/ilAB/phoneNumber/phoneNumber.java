@@ -17,11 +17,11 @@ public class phoneNumber {
         String first3 = firstNum + "" + carrierId[randomIndexForCarrierId] + "" + afterCarrierId;
 
 
-        int upperBoundForSecondThree = 1000;
-        int second3 =  number.nextInt(upperBoundForSecondThree);
+        int upperBoundForSecond3 = 1000;
+        int second3 =  number.nextInt(upperBoundForSecond3);
 
-        int upperBoundForLastFour = 10000;
-        int last4 = number.nextInt(upperBoundForLastFour);
+        int upperBoundForLast4 = 10000;
+        int last4 = number.nextInt(upperBoundForLast4);
 
 
         String phoneNum = first3 + " " + second3 + " " + last4;
