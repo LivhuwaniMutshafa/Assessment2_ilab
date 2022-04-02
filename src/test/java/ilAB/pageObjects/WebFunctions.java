@@ -24,7 +24,7 @@ public class WebFunctions extends webActions {
 
     Reporting repo = new Reporting();
     String filename;
-    //ExtentTest node;
+
 
     public void careers(WebDriver driver, ExtentTest node) throws IOException {
         iLAB_Landing careersObj = new iLAB_Landing(driver);
@@ -115,7 +115,7 @@ public class WebFunctions extends webActions {
 
         iLabApply applyObj = new iLabApply(driver);
 
-        //Waits for the errror message to be visible
+
         Wait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(Duration.ofSeconds(5))
                 .pollingEvery(Duration.ofMillis(1000))

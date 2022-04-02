@@ -27,7 +27,7 @@ public class phoneNumber {
         String phoneNum = first3 + " " + second3 + " " + last4;
 
 
-        return phoneNum;  //return 10 digits num
+        return phoneNum;
 
     }
 

@@ -31,7 +31,7 @@ public class iLABTest {
     public void init(String sAdactinUrl,String Browser){
         sUrl = sAdactinUrl;
         sBrowser = Browser;
-        //dataStore=sdatastore;
+
         web.setWebDriver(web.initializeWebDriver(sBrowser));
        reports = repo.initializeExtentReports("reports/report.html");
     }
