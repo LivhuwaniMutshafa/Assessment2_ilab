@@ -58,7 +58,7 @@ public class iLABTest {
                     iLAB.careers(web.getWebDriver(), node);
                     iLAB.country(web.getWebDriver(), node);
                     iLAB.openings(web.getWebDriver(), node);
-                    iLAB.Apply(web.getWebDriver(),rs,node);
+                    iLAB.Apply(web.getWebDriver(),rs);
                     iLAB.validate(web.getWebDriver(),node);
                 }
             }

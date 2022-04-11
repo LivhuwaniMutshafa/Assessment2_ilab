@@ -90,7 +90,7 @@ public class WebFunctions extends webActions {
         }
     }
 
-    public void Apply(WebDriver driver, ResultSet rs, ExtentTest node) {
+    public void Apply(WebDriver driver, ResultSet rs) {
         iLabApply applyObj = new iLabApply(driver);
         phoneNumber phone = new phoneNumber();
 

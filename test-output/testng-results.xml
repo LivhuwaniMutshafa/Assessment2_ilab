@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-05T14:21:38 SAST" name="All Test Suite" finished-at="2022-04-05T14:26:15 SAST" duration-ms="276931">
+    <groups>
+    </groups>
+    <test started-at="2022-04-05T14:21:38 SAST" name="CHROME TESTS" finished-at="2022-04-05T14:21:56 SAST" duration-ms="17557">
+      <class name="ilAB.WebTests.iLABTest">
+        <test-method is-config="true" signature="init(java.lang.String,java.lang.String)[pri:0, instance:ilAB.WebTests.iLABTest@534a5a98]" started-at="2022-04-05T14:21:38 SAST" name="init" finished-at="2022-04-05T14:21:40 SAST" duration-ms="2189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.ilabquality.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="Apply()[pri:0, instance:ilAB.WebTests.iLABTest@534a5a98]" started-at="2022-04-05T14:21:40 SAST" name="Apply" finished-at="2022-04-05T14:21:52 SAST" duration-ms="11911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Apply -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ilAB.WebTests.iLABTest@534a5a98]" started-at="2022-04-05T14:21:52 SAST" name="tearDown" finished-at="2022-04-05T14:21:56 SAST" duration-ms="3432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ilAB.WebTests.iLABTest -->
+    </test> <!-- CHROME TESTS -->
+    <test started-at="2022-04-05T14:21:56 SAST" name="FIREFOX TESTS" finished-at="2022-04-05T14:23:08 SAST" duration-ms="72911">
+      <class name="ilAB.WebTests.iLABTest">
+        <test-method is-config="true" signature="init(java.lang.String,java.lang.String)[pri:0, instance:ilAB.WebTests.iLABTest@76a4ebf2]" started-at="2022-04-05T14:21:56 SAST" name="init" finished-at="2022-04-05T14:22:06 SAST" duration-ms="10018" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.ilabquality.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="Apply()[pri:0, instance:ilAB.WebTests.iLABTest@76a4ebf2]" started-at="2022-04-05T14:22:06 SAST" name="Apply" finished-at="2022-04-05T14:23:05 SAST" duration-ms="59033" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at ilAB.pageObjects.WebFunctions.country(WebFunctions.java:62)
+at ilAB.WebTests.iLABTest.Apply(iLABTest.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Apply -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ilAB.WebTests.iLABTest@76a4ebf2]" started-at="2022-04-05T14:23:05 SAST" name="tearDown" finished-at="2022-04-05T14:23:08 SAST" duration-ms="3856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ilAB.WebTests.iLABTest -->
+    </test> <!-- FIREFOX TESTS -->
+    <test started-at="2022-04-05T14:23:08 SAST" name="IE TESTS" finished-at="2022-04-05T14:26:15 SAST" duration-ms="186440">
+      <class name="ilAB.WebTests.iLABTest">
+        <test-method is-config="true" signature="init(java.lang.String,java.lang.String)[pri:0, instance:ilAB.WebTests.iLABTest@5b1669c0]" started-at="2022-04-05T14:23:08 SAST" name="init" finished-at="2022-04-05T14:24:53 SAST" duration-ms="104007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.ilabquality.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MICROSOFT EDGE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="Apply()[pri:0, instance:ilAB.WebTests.iLABTest@5b1669c0]" started-at="2022-04-05T14:24:53 SAST" name="Apply" finished-at="2022-04-05T14:26:12 SAST" duration-ms="79042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Apply -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ilAB.WebTests.iLABTest@5b1669c0]" started-at="2022-04-05T14:26:12 SAST" name="tearDown" finished-at="2022-04-05T14:26:15 SAST" duration-ms="3390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ilAB.WebTests.iLABTest -->
+    </test> <!-- IE TESTS -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
